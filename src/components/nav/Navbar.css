@@ -1,0 +1,19 @@
+button {
+    text-decoration: none;
+    border: 0;
+   
+}
+
+.navbar {
+   position:fixed;
+ top: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    width: 100%;
+    background-color:#FAF0D7 ;
+    align-items: center;
+}
+
+
+

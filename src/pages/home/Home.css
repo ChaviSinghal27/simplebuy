@@ -1,0 +1,36 @@
+.categorycard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.categorycard img {
+    height: 500px;
+    width: 100%;
+}
+
+.categorycard-img {
+    position: relative;
+}
+.categorycard-button1   {
+    position: absolute;
+     top: 250px;
+     right: 250px;
+   padding: 0px , 10px;
+   font-size: 25px;
+
+}
+.categorycard-button2  {
+    position: absolute;
+    top: 250px;
+    right: 200px;
+  padding: 0px , 10px;
+font-size: 25px;
+}
+
+.categorycard-button3   {
+    position: absolute;
+    top: 250px;
+    right: 200px;
+  padding: 0px , 10px;
+font-size: 25px;
+}
