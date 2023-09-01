@@ -1,0 +1,26 @@
+.product-img {
+    padding-top: 100px;
+    height: 300px;
+    width: 300px;
+   
+    
+}
+
+.list-of-products {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+gap:20px;
+text-align: start;
+}
+
+.product-item {
+    position: relative;
+}
+
+
+
+ .wishlist-icon {
+    position: absolute;
+   top:110px;
+   right:40px;
+} 
