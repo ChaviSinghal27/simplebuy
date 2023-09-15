@@ -1,20 +1,51 @@
-button {
+a {
     text-decoration: none;
-    border: 0;
-   
+    
 }
 
 .navbar {
    position:fixed;
  top: 0px;
     display: flex;
-    justify-content: space-between;
+justify-content: space-between;
     height: 90px;
     width: 100%;
     background-color:#FAF0D7 ;
     align-items: center;
     z-index: 2;
+    
+}
+
+.nav-category {
+display: flex;
+gap: 10px;
+
+}
+
+.nav-items {
+    display: flex;
+    gap: 10px;
+    color: black;
+    padding-right: 10px;
+}
+
+.navbar-wishlist {
+    position: relative;
+}
+
+.navbar-cart {
+    position: relative;
 }
 
 
+.wishlist-count {
+    position: absolute;
+    bottom: 14px;
+    left: 11px;
+}
 
+.cart-count {
+    position: absolute;
+    bottom: 15px;
+    left: 12px;
+}
