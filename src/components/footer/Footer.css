@@ -1,19 +1,21 @@
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 300px;
-    margin-top: 2rem;
-    background-color:#FAF0D7 ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 300px;
+  margin-top: 2rem;
+  background-color: #faf0d7;
 }
 
 .footer-website-info {
- border-right: 1px solid black;
- 
+  border-right: 1px solid black;
 }
 
-
 .footer-items {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+a {
+  color: black;
 }

@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom"
 import "./Footer.css"
 
 export function Footer() {
@@ -12,17 +12,17 @@ export function Footer() {
                 <p>+91-6350259432</p>
                 <p>hello@simplebuy.com</p>
                 
-           
+    
         </div>
     </div>
-<div className="footer-account-info">
+    <div className="footer-account-info">
     <h2>Information</h2>
     <div className="footer-items"> 
-<p>Products</p> 
-    <p>My Cart</p>
-    <p>Wishlist</p>
-    <p>My Account</p>
-   
+    <Link to="/Product" >Products</Link> 
+    <Link to="/Cart" >My Cart</Link>
+    <Link to="/Wishlist" >Wishlist</Link>
+    <Link to="" >My Account</Link>
+
     </div>
 </div>
     
