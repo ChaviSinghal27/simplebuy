@@ -1,14 +1,14 @@
 .heroimg {
-    padding-top: 100px;
-    width:100%;
-    height: 700px;
+  padding-top: 100px;
+  width: 100%;
+  height: 700px;
 }
 
 .heroimg-button {
-    font-size: 30px;
-    padding: 10px;
-    position: absolute;
-   
-    right: 40px;
-    top: 690px;
+  font-size: 30px;
+  padding: 10px;
+  position: absolute;
+  background-color: white;
+  right: 40px;
+  top: 690px;
 }

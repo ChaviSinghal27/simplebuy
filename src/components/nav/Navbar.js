@@ -3,6 +3,7 @@ import { useWishlistContext } from "../../Context/WishlistContext";
 import { useFilter } from "../../Context/filterContext";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logo from "../../images/logo.svg";
 
 export function Navbar() {
   const { state } = useCartContext();
@@ -12,8 +13,10 @@ export function Navbar() {
   return (
     <header className="header">
       <div className="navbar">
-        <div className="logo">
-          <Link to="/">SIMPLEBUY</Link>
+        <div>
+          <Link to="./">
+            <img src={logo} className="logo" alt="logo" />
+          </Link>
         </div>
 
         <div className="nav-category">
