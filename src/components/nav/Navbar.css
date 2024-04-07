@@ -1,58 +1,109 @@
-a {
-  text-decoration: none;
-}
-.header {
-  background-color: #faf0d7;
-  width: 100vw;
-  height: 90px;
-  position: fixed;
-  top: 0px;
-}
-.navbar {
-  position: relative;
-  top: 0px;
-  display: flex;
-  justify-content: space-between;
-  height: 90px;
-  width: 1200px;
-  background-color: #faf0d7;
-  align-items: center;
-  z-index: 2;
-  padding-left: 100px;
+/* Navbar.css */
+
+/* Apply the global colors */
+body {
+  font-family: var(--font-text);
+  color: var(--text-color);
 }
 
-.logo {
-  height: 10vmin;
+.header {
+  width: 100%;
+  background-color: var(--color-primary);
+  height: 80px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* Add a mild shadow */
+  transition: tranform 0.4s;
+
+  z-index: 100;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar a {
+  transition: transform 0.4s;
+}
+
+.navbar a:hover {
+  color: var(--color-accent);
+  transform: scale(1.1);
+  /* Background color on hover */
+}
+
+.logo img {
+  max-width: 150px;
+  transition: transform 0.4s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.nav-category,
+.nav-items {
+  display: flex;
+  gap: 30px;
+  vertical-align: middle;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 0px 20px;
 }
 
 .nav-category {
-  display: flex;
-  gap: 10px;
+  vertical-align: middle;
 }
 
-.nav-items {
-  display: flex;
-  gap: 10px;
-  color: black;
-  padding-right: 20px;
+.nav-category img,
+.nav-items img {
+  width: 40px;
+  padding-right: 15px;
+  vertical-align: middle;
 }
 
-.navbar-wishlist {
-  position: relative;
+.nav-category a,
+.nav-items a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: var(--font-text);
 }
 
+.category-divider {
+  width: 2px; /* Adjust the width as needed */
+  height: 40px; /* Set it to match the icon height */
+  background-color: var(--color-highlight); /* Choose your divider color */
+  opacity: 0.5; /* Adjust opacity as needed */
+}
+
+.navbar-wishlist,
 .navbar-cart {
   position: relative;
+  font-size: 30px;
+  color: var(--color-accent); /* Use your accent color */
+  transition: transform 0.4s; /* Add a smooth color transition on hover */
+  font-family: var(--font-text); /* Use your text font */
 }
 
-.wishlist-count {
-  position: absolute;
-  bottom: 14px;
-  left: 11px;
+.navbar-wishlist :hover,
+.navbar-cart :hover {
+  transform: scale(1.08);
+  color: var(--color-highlight);
 }
 
+.wishlist-count,
 .cart-count {
   position: absolute;
-  bottom: 15px;
-  left: 12px;
+  bottom: 30px;
+  left: 20px;
+  font-size: 18px;
+  color: var(--color-highlight);
 }
+
+/* Add any additional styling as needed */

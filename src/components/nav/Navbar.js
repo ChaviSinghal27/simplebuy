@@ -2,8 +2,12 @@ import { useCartContext } from "../../Context/CartContext";
 import { useWishlistContext } from "../../Context/WishlistContext";
 import { useFilter } from "../../Context/filterContext";
 import "./Navbar.css";
+
 import { Link } from "react-router-dom";
-import logo from "../../images/logo.svg";
+import Logo from "../simplebuy-logo.svg";
+import man from "./man.svg";
+import woman from "./woman.svg";
+import user from "./user.svg";
 
 export function Navbar() {
   const { state } = useCartContext();
@@ -13,9 +17,9 @@ export function Navbar() {
   return (
     <header className="header">
       <div className="navbar">
-        <div>
-          <Link to="./">
-            <img src={logo} className="logo" alt="logo" />
+        <div className="logo">
+          <Link to="/">
+            <img src={Logo} alt="SimpleBuy Logo" />
           </Link>
         </div>
 
@@ -24,17 +28,24 @@ export function Navbar() {
             to="/Product"
             onClick={() => dispatch({ type: "GENDER", payload: "MEN" })}
           >
-            Men
+            <img src={man} alt="Man Icon" /> Men
           </Link>
+
+          <div className="category-divider"></div>
           <Link
             to="/Product"
             onClick={() => dispatch({ type: "GENDER", payload: "WOMEN" })}
           >
+            {" "}
+            <img src={woman} alt="Woman Icon" />
             Women
           </Link>
         </div>
         <div className="nav-items">
-          <Link>Account</Link>
+          <Link>
+            {" "}
+            <img src={user} alt="user icon" /> Account
+          </Link>
           <div className="navbar-wishlist">
             <Link to="/Wishlist">
               <i class="fa-solid fa-heart"></i>

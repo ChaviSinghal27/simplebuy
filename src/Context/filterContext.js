@@ -2,7 +2,7 @@ import { createContext, useContext, useReducer } from "react";
 
 const filterContext = createContext();
 
-export const filter = (action, state) => {
+export const filter = (state, action) => {
   switch (action.type) {
     case "SORT":
       return {

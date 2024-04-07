@@ -25,7 +25,7 @@ export function Filter() {
         <div>
           <label>
             <input
-              type="checkbox"
+              type="radio"
               name="gender"
               onClick={() => dispatch({ type: "GENDER", payload: "MEN" })}
             ></input>
@@ -33,7 +33,7 @@ export function Filter() {
           </label>
           <label>
             <input
-              type="checkbox"
+              type="radio"
               name="gender"
               onClick={() => dispatch({ type: "GENDER", payload: "WOMEN" })}
             ></input>

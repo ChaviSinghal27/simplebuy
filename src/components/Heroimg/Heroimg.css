@@ -1,14 +1,74 @@
-.heroimg {
-  padding-top: 100px;
-  width: 100%;
-  height: 700px;
+/* Define the background image */
+.hero-container {
+  position: relative;
+  background: url("./Hero.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 90vh; /* Set the height to cover the viewport */
+  text-align: left;
+}
+
+/* Style the content */
+.hero-content {
+  padding: 5%;
+}
+
+.HeroSubtitle {
+  font-family: var(--font-text);
+  font-size: 0.8em;
+  font-weight: 300;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  color: var(--font-text);
+  padding-left: 40px;
+  border-left: 1px solid var(--color-accent);
+  padding: 10px 30px;
+  margin-bottom: 50px;
+}
+
+.HeroTitle {
+  font-family: var(--font-primary);
+  font-size: 6.4em;
+  font-weight: 100;
+  text-align: left;
+  color: var(--color-accent);
+  letter-spacing: -1px;
+  line-height: 0.9em;
+
+  margin: 30px 0px;
+}
+
+.your-style {
+  color: var(--color-text);
+}
+
+.HeroDescription {
+  font-family: var(--font-text);
+  line-height: 1.6em;
+  width: 25%;
+  font-weight: 300;
+  margin-bottom: 50px;
+  text-align: justify;
+  font-size: 0.9em;
+  color: var(--font-text);
 }
 
 .heroimg-button {
-  font-size: 30px;
-  padding: 10px;
-  position: absolute;
-  background-color: white;
-  right: 40px;
-  top: 690px;
+  padding: 10px 19px;
+  font-size: 1.3em;
+  font-family: var(--font-primary);
+  background-color: var(--color-highlight);
+  border-radius: 3px;
+  /* border: 0px; */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s;
+  text-transform: uppercase;
+}
+
+.heroimg-button:hover {
+  background-color: var(--color-accent);
+  transform: scale(1.1);
 }

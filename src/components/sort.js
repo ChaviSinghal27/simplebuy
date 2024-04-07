@@ -1,4 +1,3 @@
-import { productData } from "../utilities/data";
 
 export function sort(sortBy, productList) {
   if (sortBy === "LOW_TO_HIGH") {
